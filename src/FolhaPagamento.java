@@ -1,15 +1,15 @@
 public class FolhaPagamento {
 
-    double calcularSalario(int horaNormal, int horaExtra, ContratoTrabalho contratoTrabalho) {
+    double calcularSalario(int horaNormal, int horaExtra, ContratoTrabalho contratoTrabalho, Holerite holerite) {
 
         double salarioHoraNormal = horaNormal * contratoTrabalho.valorHoraNormal;
         double salarioHoraExtra = horaExtra * contratoTrabalho.valorHoraExtra;
-        contratoTrabalho.salarioTotal = salarioHoraNormal + salarioHoraExtra;
+        holerite.salarioTotal = salarioHoraNormal + salarioHoraExtra;
 
         if (contratoTrabalho.funcionario.quantidadeFilhos > 0){
-            contratoTrabalho.salarioTotal += (contratoTrabalho.salarioTotal / 100) * 10;
+            holerite.salarioTotal += (holerite.salarioTotal / 100) * 10;
         }
 
-        return contratoTrabalho.salarioTotal;
+        return holerite.salarioTotal;
     }
 }

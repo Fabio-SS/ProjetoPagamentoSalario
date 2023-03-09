@@ -1,5 +1,5 @@
 public class Funcionario {
 
     String nome;
-    int QuantidadeFilhos;
+    int quantidadeFilhos;
 }

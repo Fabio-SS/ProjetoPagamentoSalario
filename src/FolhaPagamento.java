@@ -4,6 +4,12 @@ public class FolhaPagamento {
 
         double salarioHoraNormal = horaNormal * contratoTrabalho.valorHoraNormal;
         double salarioHoraExtra = horaExtra * contratoTrabalho.valorHoraExtra;
-        return salarioHoraNormal + salarioHoraExtra;
+        contratoTrabalho.salarioTotal = salarioHoraNormal + salarioHoraExtra;
+
+        if (contratoTrabalho.funcionario.quantidadeFilhos > 0){
+            contratoTrabalho.salarioTotal += (contratoTrabalho.salarioTotal / 100) * 10;
+        }
+
+        return contratoTrabalho.salarioTotal;
     }
 }

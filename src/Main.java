@@ -7,11 +7,9 @@ public class Main {
 
         ContratoTrabalho contratoTrabalho = new ContratoTrabalho();
         contratoTrabalho.funcionario = funcionario;
-        contratoTrabalho.valorHoraNormal = 1000.0;
-        contratoTrabalho.valorHoraExtra = 50.0;
 
         FolhaPagamento folhaPagamento = new FolhaPagamento();
 
-        System.out.println("Salário devido: R$" + folhaPagamento.calcularSalario(5,2, contratoTrabalho));
+        System.out.println("Salário devido: R$" + folhaPagamento.calcularSalario(5,1, contratoTrabalho));
     }
 }

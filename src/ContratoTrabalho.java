@@ -8,6 +8,4 @@ public class ContratoTrabalho {
     boolean possuiAdicionalParaFilhos(){
         return funcionario.possuiFilhos();
     }
-
-
 }

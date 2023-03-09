@@ -4,9 +4,6 @@ public class Funcionario {
     int quantidadeFilhos;
 
     boolean possuiFilhos(){
-
         return quantidadeFilhos > 0;
-
     }
-
 }

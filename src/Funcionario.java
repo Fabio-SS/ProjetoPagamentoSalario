@@ -1,9 +1,9 @@
 public class Funcionario {
 
     String nome;
-    int quantidadeFilhos;
+    int quantidadeFilhos = 1;
 
-    boolean possuiFilhos(){
+    boolean funcionarioPossuiFilho(){
         return quantidadeFilhos > 0;
     }
 }

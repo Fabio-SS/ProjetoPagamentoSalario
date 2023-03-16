@@ -1,15 +1,14 @@
 public class Holerite {
 
     Funcionario funcionario;
-    double valorTotalHorasNormais;
-    double valorTotalHorasExtras;
-    double valorAdicionalParaFilhos;
-    double salarioTotal;
-    //TODO Calcular valor total = somar todos os valores e imprimir saida todos os detalhes no holerite
+    FolhaPagamento folhaPagamento;
+    ContratoTrabalho contratoTrabalho;
+    double salarioTotalFuncionario;
 
-    double calcularValorTotal(ContratoTrabalho contratoTrabalho){
-         salarioTotal = contratoTrabalho.valorHoraNormal + contratoTrabalho.valorHoraExtra;
-
-        return salarioTotal;
+    double funcionarioValorTotal(FolhaPagamento folhaPagamento, ContratoTrabalho contratoTrabalho){
+        double valorTotalHorasNormais = folhaPagamento.horasNormais * contratoTrabalho.valorHoraNormal;
+        double valorTotalHorasExtras = folhaPagamento.horasExtras * contratoTrabalho.valorHoraExtra;
+        double valorTotalAdicionalFilho = folhaPagamento.adicionalFilho;
+        return salarioTotalFuncionario = valorTotalHorasNormais + valorTotalHorasExtras + valorTotalAdicionalFilho;
     }
 }

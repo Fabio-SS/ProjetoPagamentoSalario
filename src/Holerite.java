@@ -11,7 +11,6 @@ public class Holerite {
     }
 
     void imprimirHolerite(){
-
         System.out.println("HOLERITE");
         System.out.println("-----------------");
         System.out.printf("Nome do funcionário: %s%n", funcionario.nome);
@@ -19,6 +18,5 @@ public class Holerite {
         System.out.printf("Valor das horas extras: R$ %.2f%n", valorTotalHorasExtras);
         System.out.printf("Adicional para filhos: R$ %.2f%n", adicionalParaFilhos);
         System.out.printf("Valor total: R$ %.2f%n", calcularValorTotal());
-
     }
 }

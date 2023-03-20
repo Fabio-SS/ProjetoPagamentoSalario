@@ -1,9 +1,8 @@
 public class ContratoTrabalho {
 
-    Funcionario funcionario = new Funcionario();
-
-    double valorHoraNormal = 45.00;
-    double valorHoraExtra = 15.00;
+    Funcionario funcionario;
+    double valorHoraNormal;
+    double valorHoraExtra;
 
     boolean adicionalFilho(){
         return funcionario.funcionarioPossuiFilho();
